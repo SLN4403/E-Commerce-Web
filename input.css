@@ -3,3 +3,11 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@400;700&display=swap');
+
+.category-btn {
+    @apply duration-300 transition-colors
+}
+
+.category-btn.active {
+    @apply bg-primary text-white
+}

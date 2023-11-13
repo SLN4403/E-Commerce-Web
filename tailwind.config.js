@@ -8,6 +8,7 @@ export default {
   theme: {
     colors: {
       primary: '#E85C90',
+      'white': '#ffffff',
     },
     fontFamily : {
       sans : ['Poppins', 'san-serif']
