@@ -6,17 +6,18 @@ export default {
   ],
 
   theme: {
-    colors: {
-      primary: '#E85C90',
-      'white': '#ffffff',
-    },
     fontFamily : {
       sans : ['Poppins', 'san-serif']
     },
     extend: {
       fontFamily : {
         heading : ['Agbalumo', "sans-serif"]
-      }
+      },
+      colors: {
+        primary: '#E85C90',
+        lines : '#A0A6BE',
+        secondary : '#C481A7'
+      },
     },
     container: {
       center: true,
