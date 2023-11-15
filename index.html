@@ -13,7 +13,7 @@
 <body>
     <main id="app">
     <!-- NAVIGATION -->
-        <nav class="border-b-2 border-lines ">
+        <nav class="border-b-2 border-lines fixed w-full bg-white ">
             <div class="container">
                 <div class="flex justify-between items-center py-3">
                 <!-- BRAND NAMES -->
@@ -40,14 +40,16 @@
             </div>
         </nav>
 
+        <div class="header-spacer h-24"></div>
     <!-- CATEGORIES -->
         <section class="categories container mt-3">
             <p class="text-xl font-heading text-primary mb-3">Product Categories</p>
-            <div class="category-list">
-                <button class="category-btn active border border-lines px-4 py-1 "> All </button>
-                <button class="category-btn border border-lines px-4 py-1 "> Electronics </button>
-                <button class="category-btn border border-lines px-4 py-1 "> Jewelry </button>
-                <button class="category-btn border border-lines px-4 py-1 "> Women-Clothing </button>
+            <div class="category-list flex overflow-scroll gap-3">
+                <button class="category-btn whitespace-nowrap active border border-lines px-4 py-1 "> All </button>
+                <button class="category-btn whitespace-nowrap border border-lines px-4 py-1 "> Electronics </button>
+                <button class="category-btn whitespace-nowrap border border-lines px-4 py-1 "> Jewelry </button>
+                <button class="category-btn whitespace-nowrap border border-lines px-4 py-1 "> Women-Clothing </button>
+                <button class="category-btn whitespace-nowrap border border-lines px-4 py-1 "> Men-Clothing </button>
             </div>
         </section>
 
