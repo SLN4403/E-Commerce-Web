@@ -1,14 +1,14 @@
-import { cartBtnHandler } from "./core/handler";
-import { cartBar, closeBtn, openBtn } from "./core/selector";
+import { cartBtnHandler, closeCartBtnHandler } from "./core/handler";
+import { cartBar, exitBtn, openBtn } from "./core/selector";
 
 class Shop {
 
-    listener(){
-        // cartBar.addEventListener("click", cartBtnHandler)
-        closeBtn.addEventListener("click", cartBtnHandler)
+    listener() {
+        openBtn.addEventListener("click", cartBtnHandler)
+        exitBtn.addEventListener("click", closeCartBtnHandler)
     }
-    
-    init(){
+
+    init() {
         this.listener();
     }
 }

@@ -5,3 +5,6 @@ export const cartBtnHandler = () => {
     cartBar.classList.toggle("translate-x-full")
 }
 
+export const closeCartBtnHandler = () => {
+    cartBar.classList.toggle("translate-x-full")
+}
