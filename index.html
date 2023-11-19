@@ -15,36 +15,41 @@
     <!-- NAVIGATION -->
     <nav class="border-b-2 z-40
          border-lines fixed w-full bg-white ">
+
       <div class="container">
         <div class="flex justify-between items-center py-3">
+
           <!-- BRAND NAMES -->
           <div class="brand ">
             <h1 class="font-heading text-3xl text-primary">Your Essential Wardrobe</h1>
             <p>E-Commerce-App</p>
           </div>
+
           <!-- BUTTONS -->
-          <div class="buttons flex gap-4">
-            <div class="searchBtn">
+          <div class="flex gap-4">
+            <button>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
                 stroke="currentColor" class="w-8 h-8">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
               </svg>
-            </div>
-            <div class="cartBtn  stroke-primary">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke=""
-                class="w-8 h-8">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </button>
+
+            <button onclick="cartBar()" id="open-btn" class="stroke-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
               </svg>
-            </div>
+              
+            </button>
+
           </div>
         </div>
       </div>
     </nav>
 
     <!-- SIDE BAR -->
-    <div class="cart-bar w-96 h-screen fixed top-0 right-0 bg-white z-50 border-s-2 border-lines flex flex-col">
+    <div id="cart-bar"
+      class="translate-x-full w-96 h-screen fixed top-0 right-0 bg-white z-50 border-s-2 border-lines flex flex-col">
 
       <!-- CART-HEADER -->
       <div class="cart-header border-b-2 border-lines">
@@ -55,16 +60,14 @@
             <p>Thank you for shopping</p>
           </div>
           <!-- BUTTONS -->
-          <div class="buttons flex gap-4">
-            <div class="stroke-primary">
-              <button class="exit-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke=""
-                  class="w-8 h-8">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
-                </svg>
-              </button>
-            </div>
+          <div class="stroke-primary">
+            <button id="exit-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke=""
+                class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -85,17 +88,17 @@
             <p>Total Amount</p>
             <h1 class="font-heading text-3xl text-primary"> $0 </h1>
           </div>
-            <div>
-              <button class="cart-btn border bg-primary text-white w-full h-12">Add to Cart</button>
-            </div>
+          <div>
+            <button class="cart-btn border bg-primary text-white w-full h-12">Add to Cart</button>
+          </div>
         </div>
       </div>
     </div>
 
-  <!-- SPACER -->
+    <!-- SPACER -->
     <div class="header-spacer h-24"></div>
 
-  <!-- CATEGORIES -->
+    <!-- CATEGORIES -->
     <section class="categories container mt-3">
       <p class="text-xl font-heading text-primary mb-3">Product Categories</p>
       <div class="category-list flex overflow-scroll gap-3">
